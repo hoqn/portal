@@ -1,0 +1,13 @@
+mixin button_base
+  a.button&attributes(attributes)
+    div.button-inner
+      block
+
+mixin button
+  +button_base&attributes(attributes)
+    block
+
+mixin image_button(imgsrc, imgalt)
+  +button_base&attributes(attributes)
+    img(src=imgsrc, alt=imgalt)
+    block

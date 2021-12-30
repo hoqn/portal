@@ -1,0 +1,26 @@
+-
+  var icons = [
+    'logo-linkedin', 'logo-github', 'logo-instagram'
+  ];
+  var links = [
+    'https://linkedin.com/akzm9999',
+    'https://github.com/hoqn',
+    'https://instagram.com/exhogyun'
+  ];
+//-
+  var icons = {
+    {'logo-linkedin': 'https://linkedin.com/akzm9999'},
+    {'logo-github': 'https://github.com/hoqn'},
+    {'logo-instagram': 'https://instagram.com/exhogyun'}
+  };
+
+include ../components/social-icon
+
+section.main-section
+  .main-card
+    img.main-card-img(src="assets/profile-img.png")
+    h2.main-card-title 전호균
+    h3.main-card-subtitle Hogyun Jeon
+    .social-icons
+      each icon, index in icons
+        +social-icon(icon, links[index])
