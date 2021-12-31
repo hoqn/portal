@@ -1,0 +1,17 @@
+{
+  "name": "hoqn-main-portal-page",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.17.2",
+    "pug": "^3.0.2"
+  },
+  "scripts": {
+    "server": "node server",
+    "build": "node build"
+  },
+  "devDependencies": {
+    "pkg": "^5.5.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
