@@ -1,3 +1,4 @@
 module.exports = {
-  title: "Hogyun Jeon",
+  _title: "Hogyun Jeon",
+  _profile_email: "akzm9999@gmail.com"
 };

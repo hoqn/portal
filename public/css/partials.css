@@ -9,7 +9,8 @@
   margin: 20px 0;
 }
 .topbar .topbar-logo {
-  height: 40px;
+  height: 24px;
+  width: auto;
 }
 .topbar .divider {
   display: inline-block;
@@ -47,10 +48,65 @@
   line-height: 100%;
   margin: 10px 0 0 0;
 }
+.main-section .main-card .main-card-email {
+  display: block;
+  font-weight: normal;
+  color: #525252;
+  font-size: 16px;
+  line-height: 100%;
+  margin: 20px 0 0 0;
+  transition-duration: .2s;
+}
+.main-section .main-card .main-card-email:hover {
+  color: black;
+}
 .main-section .main-card .social-icons {
   font-size: 24px;
   margin: 20px 0;
 }
 .main-section .main-card .social-icons>.social-icon {
   margin-right: 10px;
+}
+
+/* Menu Section */
+.menu-section {
+  margin: 0 0 60px 0;
+}
+.menu-section .menu-line {
+  display: block;
+  margin-top: 10px;
+}
+
+/*
+ * Tablet PC
+ */
+@media screen and (max-width:1023px) {
+  /* Main Section */
+  .main-section .main-card .social-icons>.social-icon {
+    font-size: 32px;
+  }
+
+  /* Menu Section */
+  .menu-section .menu-line .button{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+  }
+}
+
+/*
+ * Mobile
+ */
+@media screen and (max-width:767px) {
+  /* Main Section */
+  .main-section .main-card .social-icons>.social-icon {
+    font-size: 32px;
+  }
+
+  /* Menu Section */
+  .menu-section .menu-line .button{
+    display: block;
+    margin: 0 10px;
+    padding: 10px 0;
+  }
 }

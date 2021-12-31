@@ -11,13 +11,7 @@ block body
   include ./partials/topbar.pug
   .container
     include ./partials/main-section.pug
-    .menu-container
-      +button(href='https://dev.hoqn.net', class="tinted", data-link="link") 📚 개발 블로그 
-      br
-      +button(href='https://dev.hoqn.net/projects') 📂 프로젝트 
-      br
-      br
-      +button(href='https://blog.hoqn.net') 😝 일상 블로그 
+    include ./partials/menu-section.pug
 
 block foot
   span.copyright Copyright ⓒ Hogyun Jeon, 2020-2021
