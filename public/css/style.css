@@ -20,3 +20,26 @@ footer>.copyright {
   font-size: 12px;
   color: #5D5D5D;
 }
+
+:root {
+  --color-background: white;
+  --color-on-background: black;
+  --color-button-background: #f3f3f3;
+  --color-button-border: #dbdbdb;
+  --color-button-primary-background: #D5DDF6;
+  --color-button-primary-border: #91A6E8;
+
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: black;
+    --color-on-background: white;
+    --color-button-background: #313131;
+    --color-button-border: #2b2b2b;
+    --color-button-primary-background: #323a53;
+    --color-button-primary-border: #2c2f36;
+  }
+}
